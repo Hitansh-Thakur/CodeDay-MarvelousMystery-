@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Over</title>
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #ea4335;
+  }
+  
+  p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 3rem;
+  }
+  
+  .play-again-btn {
+    background-color: #ea4335;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .play-again-btn:hover {
+    background-color:#d22f1f;
+}
+.score-cnt{
+    margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Game Over</h1>
+    <p>Unfortunately, you lost the game.</p>
+    <a href="index.html" class="play-again-btn">Play Again</a>
+    <div class="score-cnt">Your Score: <span class="score">0</span></div>
+
+  </div>
+<script>
+
+var score = localStorage.getItem("score");
+
+// If the score is null (i.e. the user has not played the game yet), set the score to 0
+if (score == null) {
+    score = 0;
+}
+
+// Display the score on the page
+document.querySelector(".score").innerHTML = score;
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.container{
+
+    width: 100vw;
+    height: 40vh;
+}
+
+.navbar{
+    margin-bottom: 2rem;
+}
+.img-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 100%;
+}
+
+.timer{
+width: 4rem;
+margin-inline: auto;
+margin-block: 2rem;
+aspect-ratio: 1;
+border-radius: 100vh;
+background-color: #4779dc;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+
+}
+
+.option-container{
+/* center its inner components in 2/2 grid */
+margin-inline: auto;
+/* margin-top: 5rem; */
+width: 50vw;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+margin-block: 10rem;
+place-items: center  ;
+
+
+
+}
+.btn{
+    width:15rem;
+    font-size: 1.25em;
+}
