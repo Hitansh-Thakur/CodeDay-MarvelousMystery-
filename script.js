@@ -25,7 +25,7 @@ const timerFunc = (t = 11) => {
 		timer.innerText = time;
 		if (time === 0) {
 			clearInterval(interval);
-			window.location.href = "http://localhost:59018//Gameover.html";
+			window.location.href = "/Gameover.html";
 		}
 	}, 1000);
 	return interval;
@@ -98,7 +98,7 @@ btns.forEach((btn) => {
 			});
 
 			setTimeout(() => {
-				window.location.href = "http://localhost:59018//Gameover.html";
+				window.location.href = "/Gameover.html";
 			}, 2000);
 		}
 		localStorage.setItem("score", score.innerText);
